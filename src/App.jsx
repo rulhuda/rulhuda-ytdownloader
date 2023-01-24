@@ -1,9 +1,13 @@
-import "./App.css";
-import TodoList from "./features/todos/TodoList";
+import { Route, Routes } from "react-router";
+// import "./App.css";
+import YtMusic from "./features/yt-mp3/YtMusic";
+
 function App() {
   return (
     <>
-      <TodoList />
+      <Routes>
+        <Route path="/" element={<YtMusic />} />
+      </Routes>
     </>
   );
 }
